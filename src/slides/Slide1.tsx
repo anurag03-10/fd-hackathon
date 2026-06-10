@@ -39,7 +39,7 @@ export default function Slide1() {
       {/* Red top accent */}
       <div className="absolute top-0 left-0 right-0 h-2 bg-hsbc-red" />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-16 flex flex-col items-center justify-center h-full">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-8 flex flex-col items-center justify-center h-full">
         {/* Team badge */}
         <div className="animate-fade-in mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-hsbc-red/5 border border-hsbc-red/15">
@@ -60,7 +60,7 @@ export default function Slide1() {
         </div>
 
         {/* Hook */}
-        <div className="animate-fade-in-up stagger-2 glass-card px-8 py-5 max-w-3xl text-center mb-10 border-hsbc-red/10">
+        <div className="animate-fade-in-up stagger-2 glass-card px-8 py-5 max-w-2xl text-center mb-10 border-hsbc-red/10">
           <p className="text-hsbc-gray-700 text-lg leading-relaxed">
             Every release gets a <span className="text-hsbc-red font-semibold">confidence score</span>, a{' '}
             <span className="text-hsbc-red font-semibold">release window recommendation</span>, and a{' '}
@@ -70,7 +70,7 @@ export default function Slide1() {
         </div>
 
         {/* Flow: Inputs → Process → Outputs */}
-        <div className="animate-fade-in-up stagger-3 w-full max-w-6xl mb-10">
+        <div className="animate-fade-in-up stagger-3 w-full mb-10">
           <div className="flex items-stretch justify-center gap-6">
             {/* Inputs */}
             <div className="flex flex-col gap-3 min-w-[200px]">

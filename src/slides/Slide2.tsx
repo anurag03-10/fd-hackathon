@@ -85,7 +85,7 @@ export default function Slide2() {
     <div className="slide-container bg-white bg-grid">
       <div className="absolute inset-0 bg-radial-glow pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-16 py-12 h-full flex flex-col">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-8 py-12 h-full flex flex-col">
         {/* Title */}
         <div className="animate-fade-in mb-8">
           <div className="flex items-center gap-3 mb-2">
