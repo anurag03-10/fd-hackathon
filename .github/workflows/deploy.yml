@@ -23,7 +23,20 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy to GitHub Pages
+        uses: Set deploy path
+        id: deploy-path
+        run: |
+          branch="${GITHUB_REF#refs/heads/}"
+          if [ "$branch" = "v2" ]; then
+            echo "deploy_path=v2" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy_path=" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          destination_dir: ${{ steps.deploy-path.outputs.deploy_path }}
+          keep_files: true
+          exclude_assets: .github
