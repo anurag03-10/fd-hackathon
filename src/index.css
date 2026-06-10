@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hsbc-red: #DB0011;
+  --hsbc-red-dark: #A8000D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #FFFFFF;
+  color: #1A1A2E;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F2F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(219, 0, 17, 0.25);
+  border-radius: 3px;
+}
+
+@layer components {
+  .slide-container {
+    @apply h-screen w-full flex items-center justify-center relative overflow-hidden;
+  }
+
+  .glass-card {
+    @apply bg-white border border-hsbc-gray-100 rounded-2xl shadow-sm;
+  }
+
+  .glass-card-hover {
+    @apply glass-card hover:shadow-md hover:border-hsbc-red/20 transition-all duration-300;
+  }
+
+  .gradient-border {
+    @apply relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-2xl p-[1px];
+    background: linear-gradient(135deg, rgba(219,0,17,0.6), rgba(219,0,17,0.15), rgba(219,0,17,0.4));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .text-gradient-red {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #FF1A2E, #DB0011, #A8000D);
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #D4B000, #C4A000, #A48600);
+  }
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+.stagger-7 { animation-delay: 0.7s; }
+.stagger-8 { animation-delay: 0.8s; }
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(219,0,17,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(219,0,17,0.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(219,0,17,0.04) 0%, transparent 70%);
+}
+
+.bg-radial-glow-center {
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(219,0,17,0.03) 0%, transparent 70%);
+}
