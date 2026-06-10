@@ -106,7 +106,7 @@ export default function Slide5() {
       <div className="absolute inset-0 bg-radial-glow pointer-events-none" />
       <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-hsbc-red/[0.04] to-transparent pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-14 py-8 h-full flex flex-col">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-8 py-8 h-full flex flex-col">
         {/* Title */}
         <div className="animate-fade-in mb-5">
           <div className="flex items-center gap-3 mb-2">

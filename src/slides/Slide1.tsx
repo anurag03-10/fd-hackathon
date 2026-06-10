@@ -37,7 +37,7 @@ export default function Slide1() {
       <div className="absolute inset-0 bg-radial-glow pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-hsbc-red/[0.03] blur-[120px] pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-16 flex flex-col items-center justify-center h-full">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-8 flex flex-col items-center justify-center h-full">
         {/* Team badge */}
         <div className="animate-fade-in mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-hsbc-red/10 border border-hsbc-red/20">
@@ -58,7 +58,7 @@ export default function Slide1() {
         </div>
 
         {/* Hook */}
-        <div className="animate-fade-in-up stagger-2 glass-card px-8 py-5 max-w-3xl text-center mb-10">
+        <div className="animate-fade-in-up stagger-2 glass-card px-8 py-5 max-w-2xl text-center mb-10">
           <p className="text-hsbc-gray-100 text-lg leading-relaxed">
             Every release gets a <span className="text-white font-semibold">confidence score</span>, a{' '}
             <span className="text-white font-semibold">release window recommendation</span>, and a{' '}
@@ -68,7 +68,7 @@ export default function Slide1() {
         </div>
 
         {/* Flow: Inputs → Process → Outputs */}
-        <div className="animate-fade-in-up stagger-3 w-full max-w-6xl mb-10">
+        <div className="animate-fade-in-up stagger-3 w-full mb-10">
           <div className="flex items-stretch justify-center gap-6">
             {/* Inputs */}
             <div className="flex flex-col gap-3 min-w-[200px]">

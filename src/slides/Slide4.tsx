@@ -125,7 +125,7 @@ export default function Slide4() {
     <div className="slide-container bg-hsbc-navy bg-grid">
       <div className="absolute inset-0 bg-radial-glow pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-14 py-8 h-full flex flex-col">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-8 py-8 h-full flex flex-col">
         {/* Title */}
         <div className="animate-fade-in mb-5">
           <div className="flex items-center gap-3 mb-2">
